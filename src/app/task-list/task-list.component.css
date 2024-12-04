@@ -1,0 +1,68 @@
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.task-filters {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+.task-filters button,
+.task-list button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.task-filters button:hover,
+.task-list button:hover {
+  background-color: #0056b3;
+}
+
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.task-list li span {
+  flex: 1;
+  margin-right: 15px;
+}
+
+.task-list li button {
+  margin-left: 10px;
+}
+
+.task-list li input[type="checkbox"] {
+  margin-right: 15px;
+}

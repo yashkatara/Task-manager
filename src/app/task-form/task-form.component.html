@@ -1,0 +1,33 @@
+<div>
+  <form (ngSubmit)="saveTask()">
+    <div>
+      <label for="title">Title:</label>
+      <input
+        id="title"
+        [(ngModel)]="task.title"
+        name="title"
+        required
+      />
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <textarea
+        id="description"
+        [(ngModel)]="task.description"
+        name="description"
+        required
+      ></textarea>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          [(ngModel)]="task.completed"
+          name="completed"
+        />
+        Completed
+      </label>
+    </div>
+    <button type="submit">Save Task</button>
+  </form>
+</div>
